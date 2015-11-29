@@ -15,5 +15,9 @@ angular.module('listadetareasApp')
      $scope.tareas.push($scope.tarea);
      $scope.tarea = '';
 
-   }
+   };
+   $scope.eliminarTarea =function(index){
+$scope.tareas.splice(index,1);
+
+   };
   });
